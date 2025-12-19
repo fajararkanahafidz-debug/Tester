@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hubungi Saya</title>
+  
+  <!-- Font Awesome untuk ikon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    /* Reset dasar */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #89f7fe, #66a6ff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    /* Kartu kontak */
+    .contact-card {
+      background-color: #fff;
+      border-radius: 16px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+      padding: 30px 40px;
+      max-width: 400px;
+      text-align: center;
+      animation: fadeIn 0.6s ease-in-out;
+    }
+
+    /* Judul */
+    .contact-card h3 {
+      color: #0077cc;
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+
+    /* Paragraf */
+    .contact-card p {
+      color: #555;
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+
+    /* Daftar kontak */
+    .contact-list {
+      list-style: none;
+    }
+
+    .contact-list li {
+      margin: 12px 0;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    /* Ikon sosial */
+    .contact-list i {
+      font-size: 18px;
+      transition: transform 0.3s, color 0.3s;
+    }
+
+    /* Warna ikon sesuai platform */
+    .fa-envelope { color: #ff4b2b; }
+    .fa-whatsapp { color: #25D366; }
+    .fa-instagram { color: #E1306C; }
+
+    /* Efek hover */
+    .contact-list a {
+      text-decoration: none;
+      color: #333;
+      transition: all 0.3s ease;
+    }
+
+    .contact-list a:hover {
+      color: #0077cc;
+      text-decoration: underline;
+    }
+
+    .contact-list li:hover i {
+      transform: scale(1.2);
+    }
+
+    /* Animasi masuk */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Responsif */
+    @media (max-width: 480px) {
+      .contact-card {
+        padding: 25px;
+        max-width: 90%;
+      }
+      .contact-card h3 {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="contact-card">
+    <h3>Hubungi Saya</h3>
+    <p>Kamu dapat menghubungi saya melalui platform berikut:</p>
+    <ul class="contact-list">
+      <li><i class="fa-solid fa-envelope"></i>
+        <a href="mailto:fajararkanahafidz@gmail.com">fajararkanahafidz@gmail.com</a>
+      </li>
+      <li><i class="fa-brands fa-whatsapp"></i>
+        <a href="https://wa.me/6282298740077" target="_blank">0822-9874-0077</a>
+      </li>
+      <li><i class="fa-brands fa-instagram"></i>
+        <a href="https://www.instagram.com/fajararkana_/" target="_blank">@fajararkana_</a>
+      </li>
+    </ul>
+  </div>
+
+</body>
+</html>
